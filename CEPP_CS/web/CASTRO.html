@@ -3,73 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Login | Filipino Cuisine</title>
 </head>
 <body>
-    <nav class="d-flex flex-column navbar navbar-expand-lg navbar-light back-ground-color">
-        <div class="d-flex container justify-content-end">
-            <ul class="nav justify-content-end">
-                    <li class="d-flex flex-row nav-item" style="font-size: 1.2em; color: white;">
-                        <a class="nav-link text-white" href="">
-                            <i class="bi bi-bell-fill d-flex align-items-center">Notification</i>
-                        </a>
-                    </li>
-                    <li class="d-flex flex-row nav-item" style="font-size: 1.2em; color: white;">
-                        <a class="nav-link text-white" href="">
-                            <i class="bi bi-info-circle-fill">Help</i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="logout.php" style="font-size: 1.2em; ">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="login.php" style="font-size: 1.2em; ">Login | Sign Up</a>
-                    </li>
-            </ul>
+    <div class="vw-100 vh-100 d-flex">
+        <!--Go to home page-->
+        <div class="d-flex container-fluid flex-column right">
+            <div class=" container p-2 ">
+                <a href="index.php" class="text-decoration-none text-white fs-5">&laquo Go back to page</a>
+            </div>
+            <div class="d-flex col align-self-center container p-3">
+                <img src="Image/undraw_eating_together_tjhx.svg" class="img-fluid" alt="Responsive image">
+            </div>
         </div>
-        <div class="d-flex container justify-content-between">
-            <a href="index.php" class="text-decoration-none">
-                <div class="d-flex flex-row">
-                    <div class="img-fluid">
-                        <img src="Image/tempLogo33.png" alt="temp-logo">
-                    </div>
-                    <div class="d-flex flex-column justify-content-center text-center">
-                        <h2 class="text-white">Filipino FOOOOOOOOOOOD Cuisine</h2>
-                        <h4 class="text-white align-content-center">Since 2020</h4>
-                    </div>
+
+        <!--Login-->
+        <div class="d-flex container-fluid align-self-center justify-content-center form-container">
+            <form action="login.php" method="POST" class="d-flex flex-column p-5 w-50 h-100 ">
+                <h1 class="display-3 mb-3">Login</h1>
+                <div class="form-group">
+                    <input type="username" name="username" class="form-control mb-3 border border-dark" placeholder="User Name" value="<?php if(isset($_POST['login'])){echo $_POST['username'];}?>">
                 </div>
-                <div class="d-flex flex-row">
-                    <a href="cart.php" class="d-flex flex-row text-decoration-none align-items-center">
-                        <h4 class="d-flex text-white align-items-center mx-2">Cart</h4>
-                        <i class="bi bi-cart4" style="font-size: 2.5em; color: white;"></i>
-                    </a>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control mb-3 border border-dark" placeholder="Password">
                 </div>
-            </a>
+                <div class="form-check">
+                    <input type="checkbox" name="rememberme" class="form-check-input mb-3">
+                    <label for="rememberlogin">Remember me</label>
+                </div>
+                <div class="btn-group ml-3" role="group">
+                    <button type="submit" name="login" class="btn btn-primary btn-lg mx-2 rounded">Login</button>
+                    <a href="register.php" class="btn btn-secondary btn-lg mx-2 rounded text-decoration-none">Register</a>
+                </div>
+            </form>
         </div>
-        <div class="d-flex container justify-content-center h5">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="menu.php">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="service.php">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="about.php">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white"  href="contact.php">Contacts</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
