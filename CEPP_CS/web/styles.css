@@ -1,0 +1,12 @@
+.right{
+    background-color: #FF7A00;
+}
+.back-ground-color{
+    background-color: #FF7A00;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
