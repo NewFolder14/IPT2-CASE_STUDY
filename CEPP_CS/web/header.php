@@ -45,7 +45,7 @@
             <a href="index.php" class="text-decoration-none">
                 <div class="d-flex flex-row">
                     <div class="img-fluid">
-                        <img src="Image/tempLogo33.png" alt="temp-logo">
+                        <img src="../img/tempLogo33.png" alt="temp-logo">
                     </div>
                     <div class="d-flex flex-column justify-content-center text-center">
                         <h2 class="text-white">Filipino Cuisine</h2>

@@ -14,7 +14,7 @@
     ?>
     <div class="container mt-1 border border-light bg-light bg-gradient">
         <div class=" container-sm text-center border">
-            <div class=" container-sm">
+            <div class=" container-sm" style="height: 550px; padding: 100px 50px">
                 <h2>Term & Condition</h2>
                 <p class="">
                 This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API. This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API. This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.    
